@@ -1,0 +1,124 @@
+`css
+/ Base Colors /
+:root {
+  --soft-navy: #2E3A59;
+  --warm-coral: #F25C5C;
+  --ivory-cream: #FAF7F2;
+  --sage-green: #A8BDA8;
+  --slate-gray: #4A4A4A;
+}
+
+/ Reset & Base /
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--slate-gray);
+  background-color: var(--ivory-cream);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/ Header /
+.site-header {
+  background: var(--soft-navy);
+  color: white;
+  padding: 1rem 0;
+}
+
+.site-header .logo {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary {
+  background: var(--warm-coral);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/ Hero /
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/ Features /
+.features {
+  background: white;
+  padding: 3rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-item h4 {
+  color: var(--soft-navy);
+  margin-bottom: 0.5rem;
+}
+
+/ About /
+.about {
+  padding: 3rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/ Contact /
+.contact {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.btn-secondary {
+  background: var(--sage-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/ Footer /
+.site-footer {
+  background: var(--soft-navy);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+`
